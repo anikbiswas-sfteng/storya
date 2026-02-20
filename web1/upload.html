@@ -12,7 +12,7 @@
     <header class="hero">
         <p class="eyebrow">Dedicated Composer</p>
         <h1>Upload a New Love Story</h1>
-        <p class="hero-copy">Write with clarity, keep it heartfelt, and stay within 500 words.</p>
+        <p class="hero-copy">Write with clarity, keep it heartfelt, and stay within 5000 words.</p>
         <a class="hero-link" href="index.html">Back to Stories</a>
     </header>
 
@@ -31,7 +31,7 @@
                 <textarea id="content" placeholder="Write your story here..." required></textarea>
 
                 <div class="form-meta">
-                    <p id="word-count">0 / 500 words</p>
+                    <p id="word-count">0 / 5000 words</p>
                     <button type="submit">Upload Story</button>
                 </div>
             </form>
@@ -49,7 +49,7 @@
         window.location.hostname === "localhost" && window.location.port === "8080"
             ? "http://localhost:5050/story"
             : "/story";
-    const WORD_LIMIT = 500;
+    const WORD_LIMIT = 5000;
 
     function getWordCount(text) {
         const trimmed = text.trim();

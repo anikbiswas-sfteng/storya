@@ -2,7 +2,7 @@ const API_URL =
     window.location.hostname === "localhost" && window.location.port === "8080"
         ? "http://localhost:5050/story"
         : "/story";
-const WORD_LIMIT = 500;
+const WORD_LIMIT = 5000;
 
 function escapeHtml(text) {
     return String(text)

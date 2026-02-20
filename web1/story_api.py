@@ -109,8 +109,8 @@ class StoryHandler(BaseHTTPRequestHandler):
             return
 
         words = len(content.split())
-        if words > 500:
-            self._write_json(400, {"error": "Story must be 500 words or fewer"})
+        if words > 5000:
+            self._write_json(400, {"error": "Story must be 5000 words or fewer"})
             return
 
         stories.append({"title": title, "content": content})
