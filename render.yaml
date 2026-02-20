@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: storya-web
+    runtime: python
+    plan: free
+    buildCommand: echo "No build step"
+    startCommand: python3 web1/story_api.py
+    autoDeploy: true
