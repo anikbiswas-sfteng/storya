@@ -226,6 +226,7 @@ button:hover {
 .story-grid {
     display: grid;
     gap: 14px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .story {
@@ -306,7 +307,14 @@ button:hover {
     }
 }
 
+@media (max-width: 1080px) {
+    .story-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
 @media (max-width: 860px) {
+    .story-grid,
     .review-grid {
         grid-template-columns: 1fr;
     }
